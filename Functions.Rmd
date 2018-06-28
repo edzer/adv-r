@@ -27,7 +27,7 @@ Answer the following questions to see if you can safely skip this chapter. You c
     f1(1)()
     ```
     
-1.  How would you usually write this code?
+1.  How would usually write this code?
 
     ```{r, eval = FALSE}
     `+`(1, `*`(2, 3))
@@ -359,7 +359,7 @@ This behaviour can be quite annoying. If you make a spelling mistake in your cod
 One way to detect this problem is to use `codetools::findGlobals()`. This function lists all the external dependencies (unbound symbols) within a function: 
 
 ```{r}
-r <- function() x + 1
+f <- function() x + 1
 codetools::findGlobals(f)
 ```
 
